@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+  <title>Form</title>
+  <link rel="stylesheet" href="formstyle.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Form 1</h2>
+    <h3>Registeration Details</h3>
+    <form id="registrationForm" onsubmit="validateForm(event)">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" required>
+      <label for="email">Email ID:</label>
+      <input type="email" id="email" required>
+      <label for="password">Password:</label>
+      <input type="password" id="password" required>
+      <button type="submit">Submit</button>
+    </form>
+    <div id="errorMessages"></div>
+  </div>
+  <script src="formvalidate.js"></script>
+</body>
+</html>
+
